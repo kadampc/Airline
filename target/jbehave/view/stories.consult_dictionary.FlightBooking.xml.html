@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>stories.consult_dictionary.FlightBooking</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="stories/consult_dictionary/FlightBooking.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">book flight ticket</asA>
+  <iWantTo keyword="So that">I can get the confirmed booking</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Booking of Flight Ticket">
+<examples keyword="Examples:">
+<step>Given User is on flight booking page</step>
+<step>When User enters &apos;UserID&apos; &apos;Password&apos; and click on Submit button</step>
+<step>And Select &apos;Departure&apos; and &apos;Arrival&apos; destination</step>
+<step>And Select Service class and click on Continue</step>
+<step>And Click the Continue button on Select Flight page</step>
+<step>And Enters &apos;FirstName&apos; &apos;LastName&apos; and &apos;CreditCard&apos; details</step>
+<step>And Select the Ticketless Travel checkbox and Click on Secure Purchase</step>
+<step>Then Flight Confirmation page displayed</step>
+<parameters>
+<names><name>UserID</name><name>Password</name><name>Departure</name><name>Arrival</name><name>FirstName</name><name>LastName</name><name>CreditCard</name></names>
+<values><value>mercury</value><value>mercury</value><value>Sydney</value><value>London</value><value>Prasad</value><value>Kadam</value><value>1234567890123456</value></values>
+</parameters>
+
+<example keyword="Example:">{UserID=mercury, Password=mercury, Departure=Sydney, Arrival=London, FirstName=Prasad, LastName=Kadam, CreditCard=1234567890123456}</example>
+<step outcome="successful">Given User is on flight booking page</step>
+<step outcome="successful">When User enters &apos;UserID&apos; &apos;Password&apos; and click on Submit button</step>
+<step outcome="successful">And Select &apos;Departure&apos; and &apos;Arrival&apos; destination</step>
+<step outcome="successful">And Select Service class and click on Continue</step>
+<step outcome="successful">And Click the Continue button on Select Flight page</step>
+<step outcome="successful">And Enters &apos;FirstName&apos; &apos;LastName&apos; and &apos;CreditCard&apos; details</step>
+<step outcome="successful">And Select the Ticketless Travel checkbox and Click on Secure Purchase</step>
+<step outcome="successful">Then Flight Confirmation page displayed</step>
+</examples>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

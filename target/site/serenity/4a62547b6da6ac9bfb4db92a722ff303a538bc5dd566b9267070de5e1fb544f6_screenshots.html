@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and JBehave</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="85ff5c13192da822c1d33a4e304268ce4c4298464b18899385baedda4552e890.html"></a>
+                > <a
+                    href="4a62547b6da6ac9bfb4db92a722ff303a538bc5dd566b9267070de5e1fb544f6.html">Booking of Flight Ticket </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 29-07-2017 19:28</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title"> </span>
+                                    <span class="badge tag-badge">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user
+I want to book flight ticket
+So that I can get the confirmed booking
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="8fe4662d745e6a2ca1cb5e40f83cf2818d840cafaed3772770d5cc33b55af7bb.html">Consult Dictionary
+                                    (feature)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Booking Of Flight Ticket
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given User is on flight booking page<br>When User enters 'UserID' 'Password' and click on Submit button<br>And Select 'Departure' and 'Arrival' destination<br>And Select Service class and click on Continue<br>And Click the Continue button on Select Flight page<br>And Enters 'FirstName' 'LastName' and 'CreditCard' details<br>And Select the Ticketless Travel checkbox and Click on Secure Purchase<br>Then Flight Confirmation page displayed<br></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="scaled_7f1808591690d333693aca59d5b05fe9f371c930c21430f3a93af98c032266d8.png" title="Given User is on flight booking page" width="960"/>
+                <img src="scaled_a4560a0998a516e63904b7d204b042923330c9ddb17ad9b4118225114a002e6c.png" title="Flight booking open" width="960"/>
+                <img src="a4560a0998a516e63904b7d204b042923330c9ddb17ad9b4118225114a002e6c.png" title="Flight booking" width="960"/>
+                <img src="7f1808591690d333693aca59d5b05fe9f371c930c21430f3a93af98c032266d8.png" title="Flight booking" width="960"/>
+                <img src="7f1808591690d333693aca59d5b05fe9f371c930c21430f3a93af98c032266d8.png" title="When User enters 'UserID' 'Password' and click on Submit button" width="960"/>
+                <img src="scaled_8912ed32a705313206df7138e639ecb893128f45a9c7a57c0dd24bac81b21058.png" title="When User enters 'UserID' 'Password' and click on Submit button" width="960"/>
+                <img src="7f1808591690d333693aca59d5b05fe9f371c930c21430f3a93af98c032266d8.png" title="Enter credentials: mercury, mercury" width="960"/>
+                <img src="8912ed32a705313206df7138e639ecb893128f45a9c7a57c0dd24bac81b21058.png" title="Enter credentials: mercury, mercury" width="960"/>
+                <img src="8912ed32a705313206df7138e639ecb893128f45a9c7a57c0dd24bac81b21058.png" title="And Select 'Departure' and 'Arrival' destination" width="960"/>
+                <img src="scaled_1aff138bdba5643c6225f8ece00a57bedb733ffb83654e5c4fd8471deb157a7b.png" title="And Select 'Departure' and 'Arrival' destination" width="960"/>
+                <img src="8912ed32a705313206df7138e639ecb893128f45a9c7a57c0dd24bac81b21058.png" title="Flight finder: Sydney, London" width="960"/>
+                <img src="1aff138bdba5643c6225f8ece00a57bedb733ffb83654e5c4fd8471deb157a7b.png" title="Flight finder: Sydney, London" width="960"/>
+                <img src="1aff138bdba5643c6225f8ece00a57bedb733ffb83654e5c4fd8471deb157a7b.png" title="And Select Service class and click on Continue" width="960"/>
+                <img src="scaled_5c31aedd45f554e98acc2630f2dc3e5f885dce53144e0ecfcd951f8a54eeec8e.png" title="And Select Service class and click on Continue" width="960"/>
+                <img src="1aff138bdba5643c6225f8ece00a57bedb733ffb83654e5c4fd8471deb157a7b.png" title="Select class" width="960"/>
+                <img src="5c31aedd45f554e98acc2630f2dc3e5f885dce53144e0ecfcd951f8a54eeec8e.png" title="Select class" width="960"/>
+                <img src="5c31aedd45f554e98acc2630f2dc3e5f885dce53144e0ecfcd951f8a54eeec8e.png" title="And Click the Continue button on Select Flight page" width="960"/>
+                <img src="scaled_6dc9c58f14d2efc1e89371bf3de07f799840ed4363b988ffd27c5f9579513f8f.png" title="And Click the Continue button on Select Flight page" width="960"/>
+                <img src="5c31aedd45f554e98acc2630f2dc3e5f885dce53144e0ecfcd951f8a54eeec8e.png" title="Select flight" width="960"/>
+                <img src="6dc9c58f14d2efc1e89371bf3de07f799840ed4363b988ffd27c5f9579513f8f.png" title="Select flight" width="960"/>
+                <img src="6dc9c58f14d2efc1e89371bf3de07f799840ed4363b988ffd27c5f9579513f8f.png" title="And Enters 'FirstName' 'LastName' and 'CreditCard' details" width="960"/>
+                <img src="scaled_56146750f50ebbf6c5b9de9757f3b4734722c24a6b2e445207ac716079a4a1b5.png" title="And Enters 'FirstName' 'LastName' and 'CreditCard' details" width="960"/>
+                <img src="6dc9c58f14d2efc1e89371bf3de07f799840ed4363b988ffd27c5f9579513f8f.png" title="Booka flight: Prasad, Kadam, 1234567890123456" width="960"/>
+                <img src="56146750f50ebbf6c5b9de9757f3b4734722c24a6b2e445207ac716079a4a1b5.png" title="Booka flight: Prasad, Kadam, 1234567890123456" width="960"/>
+                <img src="56146750f50ebbf6c5b9de9757f3b4734722c24a6b2e445207ac716079a4a1b5.png" title="And Select the Ticketless Travel checkbox and Click on Secure Purchase" width="960"/>
+                <img src="scaled_fb0b5fae0bdf318e906fcf123b67895bb2939c6ec5623b75fcefc89a79ecc3d8.png" title="And Select the Ticketless Travel checkbox and Click on Secure Purchase" width="960"/>
+                <img src="56146750f50ebbf6c5b9de9757f3b4734722c24a6b2e445207ac716079a4a1b5.png" title="Secure purchase" width="960"/>
+                <img src="fb0b5fae0bdf318e906fcf123b67895bb2939c6ec5623b75fcefc89a79ecc3d8.png" title="Secure purchase" width="960"/>
+                <img src="fb0b5fae0bdf318e906fcf123b67895bb2939c6ec5623b75fcefc89a79ecc3d8.png" title="Then Flight Confirmation page displayed" width="960"/>
+                <img src="fb0b5fae0bdf318e906fcf123b67895bb2939c6ec5623b75fcefc89a79ecc3d8.png" title="Flight confirmed: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1</span>
+</div>
+</body>
+</html>

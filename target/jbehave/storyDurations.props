@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Sat Jul 29 19:29:00 AEST 2017
+threads=1
+total=33000
+threadAverage=33000
+stories/consult_dictionary/FlightBooking.story=33000

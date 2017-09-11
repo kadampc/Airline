@@ -1,0 +1,920 @@
+<xref>
+  <stories>
+    <performableStory>
+      <story>
+        <path>stories/consult_dictionary/FlightBooking.story</path>
+        <description>
+          <descriptionAsString></descriptionAsString>
+        </description>
+        <narrative>
+          <inOrderTo></inOrderTo>
+          <asA>user</asA>
+          <iWantTo>book flight ticket</iWantTo>
+          <soThat>I can get the confirmed booking</soThat>
+        </narrative>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+          </examplesTable>
+        </givenStories>
+        <lifecycle>
+          <before>
+            <steps class="java.util.Arrays$ArrayList">
+              <a class="string-array"/>
+            </steps>
+          </before>
+          <after/>
+        </lifecycle>
+        <scenarios>
+          <scenario>
+            <title>Booking of Flight Ticket</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|UserID|Password|Departure|Arrival|FirstName|LastName|CreditCard|&#xd;
+|mercury|mercury|Sydney|London|Prasad|Kadam|1234567890123456|</tableAsString>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>UserID</string>
+                <string>Password</string>
+                <string>Departure</string>
+                <string>Arrival</string>
+                <string>FirstName</string>
+                <string>LastName</string>
+                <string>CreditCard</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>UserID</string>
+                    <string>mercury</string>
+                  </entry>
+                  <entry>
+                    <string>Password</string>
+                    <string>mercury</string>
+                  </entry>
+                  <entry>
+                    <string>Departure</string>
+                    <string>Sydney</string>
+                  </entry>
+                  <entry>
+                    <string>Arrival</string>
+                    <string>London</string>
+                  </entry>
+                  <entry>
+                    <string>FirstName</string>
+                    <string>Prasad</string>
+                  </entry>
+                  <entry>
+                    <string>LastName</string>
+                    <string>Kadam</string>
+                  </entry>
+                  <entry>
+                    <string>CreditCard</string>
+                    <string>1234567890123456</string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+            </examplesTable>
+            <steps>
+              <string>Given User is on flight booking page</string>
+              <string>When User enters &apos;UserID&apos; &apos;Password&apos; and click on Submit button</string>
+              <string>And Select &apos;Departure&apos; and &apos;Arrival&apos; destination</string>
+              <string>And Select Service class and click on Continue</string>
+              <string>And Click the Continue button on Select Flight page</string>
+              <string>And Enters &apos;FirstName&apos; &apos;LastName&apos; and &apos;CreditCard&apos; details</string>
+              <string>And Select the Ticketless Travel checkbox and Click on Secure Purchase</string>
+              <string>Then Flight Confirmation page displayed</string>
+            </steps>
+          </scenario>
+        </scenarios>
+        <name>FlightBooking.story</name>
+      </story>
+      <localizedNarrative>As a user
+I want to book flight ticket
+So that I can get the confirmed booking</localizedNarrative>
+      <allowed>true</allowed>
+      <status>SUCCESSFUL</status>
+      <givenStories/>
+      <scenarios>
+        <performableScenario>
+          <scenario>
+            <title>Booking of Flight Ticket</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|UserID|Password|Departure|Arrival|FirstName|LastName|CreditCard|&#xd;
+|mercury|mercury|Sydney|London|Prasad|Kadam|1234567890123456|</tableAsString>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>UserID</string>
+                <string>Password</string>
+                <string>Departure</string>
+                <string>Arrival</string>
+                <string>FirstName</string>
+                <string>LastName</string>
+                <string>CreditCard</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>UserID</string>
+                    <string>mercury</string>
+                  </entry>
+                  <entry>
+                    <string>Password</string>
+                    <string>mercury</string>
+                  </entry>
+                  <entry>
+                    <string>Departure</string>
+                    <string>Sydney</string>
+                  </entry>
+                  <entry>
+                    <string>Arrival</string>
+                    <string>London</string>
+                  </entry>
+                  <entry>
+                    <string>FirstName</string>
+                    <string>Prasad</string>
+                  </entry>
+                  <entry>
+                    <string>LastName</string>
+                    <string>Kadam</string>
+                  </entry>
+                  <entry>
+                    <string>CreditCard</string>
+                    <string>1234567890123456</string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+            </examplesTable>
+            <steps>
+              <string>Given User is on flight booking page</string>
+              <string>When User enters &apos;UserID&apos; &apos;Password&apos; and click on Submit button</string>
+              <string>And Select &apos;Departure&apos; and &apos;Arrival&apos; destination</string>
+              <string>And Select Service class and click on Continue</string>
+              <string>And Click the Continue button on Select Flight page</string>
+              <string>And Enters &apos;FirstName&apos; &apos;LastName&apos; and &apos;CreditCard&apos; details</string>
+              <string>And Select the Ticketless Travel checkbox and Click on Secure Purchase</string>
+              <string>Then Flight Confirmation page displayed</string>
+            </steps>
+          </scenario>
+          <storyPath>stories/consult_dictionary/FlightBooking.story</storyPath>
+          <allowed>true</allowed>
+          <examplePerformableScenarios>
+            <examplePerformableScenario>
+              <parameters class="linked-hash-map">
+                <entry>
+                  <string>UserID</string>
+                  <string>mercury</string>
+                </entry>
+                <entry>
+                  <string>Password</string>
+                  <string>mercury</string>
+                </entry>
+                <entry>
+                  <string>Departure</string>
+                  <string>Sydney</string>
+                </entry>
+                <entry>
+                  <string>Arrival</string>
+                  <string>London</string>
+                </entry>
+                <entry>
+                  <string>FirstName</string>
+                  <string>Prasad</string>
+                </entry>
+                <entry>
+                  <string>LastName</string>
+                  <string>Kadam</string>
+                </entry>
+                <entry>
+                  <string>CreditCard</string>
+                  <string>1234567890123456</string>
+                </entry>
+              </parameters>
+              <givenStories/>
+              <beforeSteps>
+                <matches/>
+              </beforeSteps>
+              <steps>
+                <matches/>
+                <results>
+                  <successful>
+                    <step>Given User is on flight booking page</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Given User is on flight booking page</parametrisedStep>
+                    <durationInMillis>13414</durationInMillis>
+                    <start>1501320507121</start>
+                    <end>1501320520535</end>
+                  </successful>
+                  <successful>
+                    <step>When User enters &apos;UserID&apos; &apos;Password&apos; and click on Submit button</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>When User enters &apos;UserID&apos; &apos;Password&apos; and click on Submit button</parametrisedStep>
+                    <durationInMillis>5245</durationInMillis>
+                    <start>1501320521179</start>
+                    <end>1501320526424</end>
+                  </successful>
+                  <successful>
+                    <step>And Select &apos;Departure&apos; and &apos;Arrival&apos; destination</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>And Select &apos;Departure&apos; and &apos;Arrival&apos; destination</parametrisedStep>
+                    <durationInMillis>1372</durationInMillis>
+                    <start>1501320526924</start>
+                    <end>1501320528296</end>
+                  </successful>
+                  <successful>
+                    <step>And Select Service class and click on Continue</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>And Select Service class and click on Continue</parametrisedStep>
+                    <durationInMillis>1944</durationInMillis>
+                    <start>1501320528744</start>
+                    <end>1501320530688</end>
+                  </successful>
+                  <successful>
+                    <step>And Click the Continue button on Select Flight page</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>And Click the Continue button on Select Flight page</parametrisedStep>
+                    <durationInMillis>2553</durationInMillis>
+                    <start>1501320531232</start>
+                    <end>1501320533785</end>
+                  </successful>
+                  <successful>
+                    <step>And Enters &apos;FirstName&apos; &apos;LastName&apos; and &apos;CreditCard&apos; details</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>And Enters &apos;FirstName&apos; &apos;LastName&apos; and &apos;CreditCard&apos; details</parametrisedStep>
+                    <durationInMillis>1076</durationInMillis>
+                    <start>1501320534441</start>
+                    <end>1501320535517</end>
+                  </successful>
+                  <successful>
+                    <step>And Select the Ticketless Travel checkbox and Click on Secure Purchase</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>And Select the Ticketless Travel checkbox and Click on Secure Purchase</parametrisedStep>
+                    <durationInMillis>2456</durationInMillis>
+                    <start>1501320536221</start>
+                    <end>1501320538677</end>
+                  </successful>
+                  <successful>
+                    <step>Then Flight Confirmation page displayed</step>
+                    <type>SUCCESSFUL</type>
+                    <parametrisedStep>Then Flight Confirmation page displayed</parametrisedStep>
+                    <durationInMillis>592</durationInMillis>
+                    <start>1501320539253</start>
+                    <end>1501320539845</end>
+                  </successful>
+                </results>
+              </steps>
+              <afterSteps>
+                <matches/>
+              </afterSteps>
+              <storyAndScenarioMeta>
+                <properties/>
+              </storyAndScenarioMeta>
+              <scenario>
+                <title>Booking of Flight Ticket</title>
+                <meta>
+                  <properties/>
+                </meta>
+                <givenStories>
+                  <givenStories/>
+                  <givenStoriesAsString></givenStoriesAsString>
+                  <examplesTable>
+                    <tableAsString></tableAsString>
+                    <tableTransformers>
+                      <transformers>
+                        <entry>
+                          <string>FORMATTING</string>
+                          <formatting/>
+                        </entry>
+                        <entry>
+                          <string>REPLACING</string>
+                          <replacing/>
+                        </entry>
+                        <entry>
+                          <string>FROM_LANDSCAPE</string>
+                          <fromLandscape/>
+                        </entry>
+                      </transformers>
+                    </tableTransformers>
+                    <headers/>
+                    <data/>
+                    <properties>
+                      <properties>
+                        <property name="headerSeparator" value="|"/>
+                        <property name="valueSeparator" value="|"/>
+                        <property name="ignorableSeparator" value="|--"/>
+                      </properties>
+                    </properties>
+                    <propertiesAsString></propertiesAsString>
+                    <namedParameters/>
+                  </examplesTable>
+                </givenStories>
+                <examplesTable>
+                  <tableAsString>|UserID|Password|Departure|Arrival|FirstName|LastName|CreditCard|&#xd;
+|mercury|mercury|Sydney|London|Prasad|Kadam|1234567890123456|</tableAsString>
+                  <tableTransformers>
+                    <transformers>
+                      <entry>
+                        <string>FORMATTING</string>
+                        <formatting/>
+                      </entry>
+                      <entry>
+                        <string>REPLACING</string>
+                        <replacing/>
+                      </entry>
+                      <entry>
+                        <string>FROM_LANDSCAPE</string>
+                        <fromLandscape/>
+                      </entry>
+                    </transformers>
+                  </tableTransformers>
+                  <headers>
+                    <string>UserID</string>
+                    <string>Password</string>
+                    <string>Departure</string>
+                    <string>Arrival</string>
+                    <string>FirstName</string>
+                    <string>LastName</string>
+                    <string>CreditCard</string>
+                  </headers>
+                  <data>
+                    <linked-hash-map>
+                      <entry>
+                        <string>UserID</string>
+                        <string>mercury</string>
+                      </entry>
+                      <entry>
+                        <string>Password</string>
+                        <string>mercury</string>
+                      </entry>
+                      <entry>
+                        <string>Departure</string>
+                        <string>Sydney</string>
+                      </entry>
+                      <entry>
+                        <string>Arrival</string>
+                        <string>London</string>
+                      </entry>
+                      <entry>
+                        <string>FirstName</string>
+                        <string>Prasad</string>
+                      </entry>
+                      <entry>
+                        <string>LastName</string>
+                        <string>Kadam</string>
+                      </entry>
+                      <entry>
+                        <string>CreditCard</string>
+                        <string>1234567890123456</string>
+                      </entry>
+                    </linked-hash-map>
+                  </data>
+                  <properties>
+                    <properties>
+                      <property name="headerSeparator" value="|"/>
+                      <property name="valueSeparator" value="|"/>
+                      <property name="ignorableSeparator" value="|--"/>
+                    </properties>
+                  </properties>
+                  <propertiesAsString></propertiesAsString>
+                  <namedParameters/>
+                </examplesTable>
+                <steps>
+                  <string>Given User is on flight booking page</string>
+                  <string>When User enters &apos;UserID&apos; &apos;Password&apos; and click on Submit button</string>
+                  <string>And Select &apos;Departure&apos; and &apos;Arrival&apos; destination</string>
+                  <string>And Select Service class and click on Continue</string>
+                  <string>And Click the Continue button on Select Flight page</string>
+                  <string>And Enters &apos;FirstName&apos; &apos;LastName&apos; and &apos;CreditCard&apos; details</string>
+                  <string>And Select the Ticketless Travel checkbox and Click on Secure Purchase</string>
+                  <string>Then Flight Confirmation page displayed</string>
+                </steps>
+              </scenario>
+            </examplePerformableScenario>
+          </examplePerformableScenarios>
+          <status>SUCCESSFUL</status>
+        </performableScenario>
+      </scenarios>
+      <beforeSteps/>
+      <afterSteps/>
+      <timing>
+        <durationInMillis>33644</durationInMillis>
+        <start>1501320506997</start>
+        <end>1501320540641</end>
+      </timing>
+      <givenStory>false</givenStory>
+    </performableStory>
+  </stories>
+  <scenarios>
+    <performableScenario>
+      <scenario>
+        <title>Booking of Flight Ticket</title>
+        <meta>
+          <properties/>
+        </meta>
+        <givenStories>
+          <givenStories/>
+          <givenStoriesAsString></givenStoriesAsString>
+          <examplesTable>
+            <tableAsString></tableAsString>
+            <tableTransformers>
+              <transformers>
+                <entry>
+                  <string>FORMATTING</string>
+                  <formatting/>
+                </entry>
+                <entry>
+                  <string>REPLACING</string>
+                  <replacing/>
+                </entry>
+                <entry>
+                  <string>FROM_LANDSCAPE</string>
+                  <fromLandscape/>
+                </entry>
+              </transformers>
+            </tableTransformers>
+            <headers/>
+            <data/>
+            <properties>
+              <properties>
+                <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
+              </properties>
+            </properties>
+            <propertiesAsString></propertiesAsString>
+            <namedParameters/>
+          </examplesTable>
+        </givenStories>
+        <examplesTable>
+          <tableAsString>|UserID|Password|Departure|Arrival|FirstName|LastName|CreditCard|&#xd;
+|mercury|mercury|Sydney|London|Prasad|Kadam|1234567890123456|</tableAsString>
+          <tableTransformers>
+            <transformers>
+              <entry>
+                <string>FORMATTING</string>
+                <formatting/>
+              </entry>
+              <entry>
+                <string>REPLACING</string>
+                <replacing/>
+              </entry>
+              <entry>
+                <string>FROM_LANDSCAPE</string>
+                <fromLandscape/>
+              </entry>
+            </transformers>
+          </tableTransformers>
+          <headers>
+            <string>UserID</string>
+            <string>Password</string>
+            <string>Departure</string>
+            <string>Arrival</string>
+            <string>FirstName</string>
+            <string>LastName</string>
+            <string>CreditCard</string>
+          </headers>
+          <data>
+            <linked-hash-map>
+              <entry>
+                <string>UserID</string>
+                <string>mercury</string>
+              </entry>
+              <entry>
+                <string>Password</string>
+                <string>mercury</string>
+              </entry>
+              <entry>
+                <string>Departure</string>
+                <string>Sydney</string>
+              </entry>
+              <entry>
+                <string>Arrival</string>
+                <string>London</string>
+              </entry>
+              <entry>
+                <string>FirstName</string>
+                <string>Prasad</string>
+              </entry>
+              <entry>
+                <string>LastName</string>
+                <string>Kadam</string>
+              </entry>
+              <entry>
+                <string>CreditCard</string>
+                <string>1234567890123456</string>
+              </entry>
+            </linked-hash-map>
+          </data>
+          <properties>
+            <properties>
+              <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
+            </properties>
+          </properties>
+          <propertiesAsString></propertiesAsString>
+          <namedParameters/>
+        </examplesTable>
+        <steps>
+          <string>Given User is on flight booking page</string>
+          <string>When User enters &apos;UserID&apos; &apos;Password&apos; and click on Submit button</string>
+          <string>And Select &apos;Departure&apos; and &apos;Arrival&apos; destination</string>
+          <string>And Select Service class and click on Continue</string>
+          <string>And Click the Continue button on Select Flight page</string>
+          <string>And Enters &apos;FirstName&apos; &apos;LastName&apos; and &apos;CreditCard&apos; details</string>
+          <string>And Select the Ticketless Travel checkbox and Click on Secure Purchase</string>
+          <string>Then Flight Confirmation page displayed</string>
+        </steps>
+      </scenario>
+      <storyPath>stories/consult_dictionary/FlightBooking.story</storyPath>
+      <allowed>true</allowed>
+      <examplePerformableScenarios>
+        <examplePerformableScenario>
+          <parameters class="linked-hash-map">
+            <entry>
+              <string>UserID</string>
+              <string>mercury</string>
+            </entry>
+            <entry>
+              <string>Password</string>
+              <string>mercury</string>
+            </entry>
+            <entry>
+              <string>Departure</string>
+              <string>Sydney</string>
+            </entry>
+            <entry>
+              <string>Arrival</string>
+              <string>London</string>
+            </entry>
+            <entry>
+              <string>FirstName</string>
+              <string>Prasad</string>
+            </entry>
+            <entry>
+              <string>LastName</string>
+              <string>Kadam</string>
+            </entry>
+            <entry>
+              <string>CreditCard</string>
+              <string>1234567890123456</string>
+            </entry>
+          </parameters>
+          <givenStories/>
+          <beforeSteps>
+            <matches/>
+          </beforeSteps>
+          <steps>
+            <matches/>
+            <results>
+              <successful>
+                <step>Given User is on flight booking page</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Given User is on flight booking page</parametrisedStep>
+                <durationInMillis>13414</durationInMillis>
+                <start>1501320507121</start>
+                <end>1501320520535</end>
+              </successful>
+              <successful>
+                <step>When User enters &apos;UserID&apos; &apos;Password&apos; and click on Submit button</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>When User enters &apos;UserID&apos; &apos;Password&apos; and click on Submit button</parametrisedStep>
+                <durationInMillis>5245</durationInMillis>
+                <start>1501320521179</start>
+                <end>1501320526424</end>
+              </successful>
+              <successful>
+                <step>And Select &apos;Departure&apos; and &apos;Arrival&apos; destination</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>And Select &apos;Departure&apos; and &apos;Arrival&apos; destination</parametrisedStep>
+                <durationInMillis>1372</durationInMillis>
+                <start>1501320526924</start>
+                <end>1501320528296</end>
+              </successful>
+              <successful>
+                <step>And Select Service class and click on Continue</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>And Select Service class and click on Continue</parametrisedStep>
+                <durationInMillis>1944</durationInMillis>
+                <start>1501320528744</start>
+                <end>1501320530688</end>
+              </successful>
+              <successful>
+                <step>And Click the Continue button on Select Flight page</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>And Click the Continue button on Select Flight page</parametrisedStep>
+                <durationInMillis>2553</durationInMillis>
+                <start>1501320531232</start>
+                <end>1501320533785</end>
+              </successful>
+              <successful>
+                <step>And Enters &apos;FirstName&apos; &apos;LastName&apos; and &apos;CreditCard&apos; details</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>And Enters &apos;FirstName&apos; &apos;LastName&apos; and &apos;CreditCard&apos; details</parametrisedStep>
+                <durationInMillis>1076</durationInMillis>
+                <start>1501320534441</start>
+                <end>1501320535517</end>
+              </successful>
+              <successful>
+                <step>And Select the Ticketless Travel checkbox and Click on Secure Purchase</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>And Select the Ticketless Travel checkbox and Click on Secure Purchase</parametrisedStep>
+                <durationInMillis>2456</durationInMillis>
+                <start>1501320536221</start>
+                <end>1501320538677</end>
+              </successful>
+              <successful>
+                <step>Then Flight Confirmation page displayed</step>
+                <type>SUCCESSFUL</type>
+                <parametrisedStep>Then Flight Confirmation page displayed</parametrisedStep>
+                <durationInMillis>592</durationInMillis>
+                <start>1501320539253</start>
+                <end>1501320539845</end>
+              </successful>
+            </results>
+          </steps>
+          <afterSteps>
+            <matches/>
+          </afterSteps>
+          <storyAndScenarioMeta>
+            <properties/>
+          </storyAndScenarioMeta>
+          <scenario>
+            <title>Booking of Flight Ticket</title>
+            <meta>
+              <properties/>
+            </meta>
+            <givenStories>
+              <givenStories/>
+              <givenStoriesAsString></givenStoriesAsString>
+              <examplesTable>
+                <tableAsString></tableAsString>
+                <tableTransformers>
+                  <transformers>
+                    <entry>
+                      <string>FORMATTING</string>
+                      <formatting/>
+                    </entry>
+                    <entry>
+                      <string>REPLACING</string>
+                      <replacing/>
+                    </entry>
+                    <entry>
+                      <string>FROM_LANDSCAPE</string>
+                      <fromLandscape/>
+                    </entry>
+                  </transformers>
+                </tableTransformers>
+                <headers/>
+                <data/>
+                <properties>
+                  <properties>
+                    <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
+                  </properties>
+                </properties>
+                <propertiesAsString></propertiesAsString>
+                <namedParameters/>
+              </examplesTable>
+            </givenStories>
+            <examplesTable>
+              <tableAsString>|UserID|Password|Departure|Arrival|FirstName|LastName|CreditCard|&#xd;
+|mercury|mercury|Sydney|London|Prasad|Kadam|1234567890123456|</tableAsString>
+              <tableTransformers>
+                <transformers>
+                  <entry>
+                    <string>FORMATTING</string>
+                    <formatting/>
+                  </entry>
+                  <entry>
+                    <string>REPLACING</string>
+                    <replacing/>
+                  </entry>
+                  <entry>
+                    <string>FROM_LANDSCAPE</string>
+                    <fromLandscape/>
+                  </entry>
+                </transformers>
+              </tableTransformers>
+              <headers>
+                <string>UserID</string>
+                <string>Password</string>
+                <string>Departure</string>
+                <string>Arrival</string>
+                <string>FirstName</string>
+                <string>LastName</string>
+                <string>CreditCard</string>
+              </headers>
+              <data>
+                <linked-hash-map>
+                  <entry>
+                    <string>UserID</string>
+                    <string>mercury</string>
+                  </entry>
+                  <entry>
+                    <string>Password</string>
+                    <string>mercury</string>
+                  </entry>
+                  <entry>
+                    <string>Departure</string>
+                    <string>Sydney</string>
+                  </entry>
+                  <entry>
+                    <string>Arrival</string>
+                    <string>London</string>
+                  </entry>
+                  <entry>
+                    <string>FirstName</string>
+                    <string>Prasad</string>
+                  </entry>
+                  <entry>
+                    <string>LastName</string>
+                    <string>Kadam</string>
+                  </entry>
+                  <entry>
+                    <string>CreditCard</string>
+                    <string>1234567890123456</string>
+                  </entry>
+                </linked-hash-map>
+              </data>
+              <properties>
+                <properties>
+                  <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
+                </properties>
+              </properties>
+              <propertiesAsString></propertiesAsString>
+              <namedParameters/>
+            </examplesTable>
+            <steps>
+              <string>Given User is on flight booking page</string>
+              <string>When User enters &apos;UserID&apos; &apos;Password&apos; and click on Submit button</string>
+              <string>And Select &apos;Departure&apos; and &apos;Arrival&apos; destination</string>
+              <string>And Select Service class and click on Continue</string>
+              <string>And Click the Continue button on Select Flight page</string>
+              <string>And Enters &apos;FirstName&apos; &apos;LastName&apos; and &apos;CreditCard&apos; details</string>
+              <string>And Select the Ticketless Travel checkbox and Click on Secure Purchase</string>
+              <string>Then Flight Confirmation page displayed</string>
+            </steps>
+          </scenario>
+        </examplePerformableScenario>
+      </examplePerformableScenarios>
+      <status>SUCCESSFUL</status>
+    </performableScenario>
+  </scenarios>
+</xref>
