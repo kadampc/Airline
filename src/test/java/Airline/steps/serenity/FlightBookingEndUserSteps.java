@@ -3,9 +3,6 @@ package Airline.steps.serenity;
 import Airline.pages.FlightBookingPage;
 import net.thucydides.core.annotations.Step;
 
-/**
- * Created by Arya on 25/07/2017.
- */
 public class FlightBookingEndUserSteps {
 
     FlightBookingPage FlightBookingPage;
